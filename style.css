@@ -1,0 +1,819 @@
+/*
+Theme Name: InVitro
+Author: Edward Alarco
+Description: Tema personalizado para la nueva web de InVitro Agencia Digital
+Version: 1.0
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+    Estilos de los nuevos cambios  invitro-2023
+
+*/
+.why_invitro {
+  background-color: #fff !important;
+}
+
+.quienes-somos-banner {
+  display: flex;
+  align-items: center;
+  min-height: calc(100vh - var(--h-header));
+  background-color: #000000;
+  margin-top: var(--h-header);
+  displey: flex;
+  align-items: center;
+  color: #ffffff;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.quienes-somos-banner__left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-left: 0;
+}
+
+.quienes-somos-banner__wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.quienes-somos-banner__top {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.quienes-somos-banner__right {
+  display: none !important;
+  position: absolute !important;
+  right: 0;
+  top: 0;
+  width: 300px !important;
+  height: 80px !important;
+  overflow: hidden !important;
+}
+
+.quienes-somos-banner__right li {
+  font-size: 23px;
+  height: 100%;
+  line-height: 40px;
+  font-family: "BiennaleBlack";
+  -webkit-text-stroke: 2px #ffffff;
+  text-stroke: 2px #ffffff;
+  color: transparent;
+}
+
+.quienes-somos-banner__right li span {
+  opacity: 0.1 !important;
+}
+
+.quienes-somos-banner__right ul {
+  display: block !important;
+}
+
+.quienes-somos-banner__title {
+  font-size: 22px;
+  font-family: "BiennaleLight";
+}
+.quienes-somos-banner__subtitle {
+  font-size: 23px;
+  font-family: "BiennaleBold";
+  -webkit-text-stroke: 2px #ffffff;
+  text-stroke: 1px #ffffff;
+  color: transparent;
+}
+.quienes-somos-banner__list {
+  overflow: hidden;
+  height: 30px !important;
+}
+.quienes-somos-banner .splide {
+  visibility: initial !important;
+}
+.quienes-somos-banner .swiper .splide__slide,
+.quienes-somos-banner .swiper .swiper-slide,
+.quienes-somos-banner .splide:not(.without-shadow) .splide__slide,
+.quienes-somos-banner .splide:not(.without-shadow) .swiper-slide {
+  width: 100%;
+  height: 100%;
+  display: initial;
+  display: initial;
+  display: flex;
+  -webkit-box-align: initial;
+  -ms-flex-align: initial;
+  align-items: initial;
+  -webkit-box-pack: initial;
+  -ms-flex-pack: initial;
+  justify-content: initial;
+  padding: initial;
+  opacity: initial;
+  -webkit-transition: initial;
+  transition: initial;
+}
+
+.quienes-somos-banner__item {
+  font-size: 23px;
+  height: 100%;
+  flex-grow: 1;
+  color: white;
+  font-family: "BiennaleBlack";
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+.quienes-somos-banner__description {
+  font-family: "Roboto Flex";
+  font-weight: 100;
+  max-width: 850px;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.quienes-somos-banner__description-one {
+  margin-bottom: 1rem;
+}
+
+.quienes-somos-banner__description > span {
+  font-family: "Roboto Flex Normal, SemiBold", sans-serif;
+  font-weight: 700;
+}
+
+.creative-with {
+  display: none;
+  font-size: 25px;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg) translateY(-50%);
+  position: fixed;
+  transform-origin: top;
+  left: 0;
+  top: 40%;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 38px;
+  letter-spacing: 0.75px;
+  opacity: 0.7;
+  font-family: "Roboto Flex Normal";
+  font-weight: 100;
+  z-index: 10;
+  transition: 200ms color ease;
+}
+
+.creative-with--second {
+  top: initial;
+  bottom: 20%;
+  right: 0;
+  left: initial;
+  transform: rotate(0deg);
+}
+
+.disruptivos {
+  background-color: #fff !important;
+}
+
+.disruptivos h2 {
+  font-size: 24px !important;
+}
+
+.disruptivos h2 b {
+  font-size: 30px !important;
+}
+
+.disruptivos > img {
+  max-width: 120px !important;
+  left: -60px !important;
+}
+
+.disruptivos {
+  cursor: url("http://127.0.0.1:5500/images/icon-4.svg");
+}
+
+.disruptivos__list {
+  position: relative;
+}
+
+.disruptivos__list li {
+  /* opacity: 0; */
+  position: absolute;
+  transform: translateY(-50%);
+  margin: auto;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+.disruptivos__list li.active {
+  opacity: 1;
+  transition: opacity 500ms ease;
+}
+
+.disruptivos {
+  cursor: none;
+  position: relative;
+}
+
+.disruptivos__cursor {
+  display: none;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+}
+
+.disruptivos__cursor.hidden {
+  display: none;
+}
+
+.disruptivos__cursor img {
+  height: 100%;
+  width: 100%;
+  animation-name: rotate;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.team-invitro {
+  background-color: #000000;
+  overflow: hidden;
+}
+
+.team-invitro__content {
+  width: 95%;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.team-invitro__logo {
+  position: absolute;
+  top: 100%;
+  left: 15%;
+  transform: translateY(-50%);
+}
+
+.team-invitro__logo svg {
+  width: 100px;
+  height: 100px;
+  fill: #fff;
+  animation-name: rotate;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.team-invitro__logo svg path {
+  fill: #fff;
+}
+
+.team-invitro__logo svg circle {
+  fill: #fff;
+}
+
+.team-invitro__wrapper {
+  display: flex;
+  height: 140px;
+}
+
+.team-invitro img:nth-child(1) {
+  align-self: flex-start;
+  width: 250px;
+}
+.team-invitro img:nth-child(2) {
+  align-self: flex-end;
+  transform: translateX(-40px);
+  width: 150px;
+}
+
+.footer-page {
+  background: #000000;
+  border-top: solid 1px #141414;
+}
+
+.footer-page .logo {
+  margin-bottom: 2rem;
+}
+
+.footer-page__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.footer-page__social-network {
+  flex-direction: row;
+  gap: 1rem;
+  display: flex;
+}
+
+.footer-page__title {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Roboto Flex";
+  margin-bottom: 1rem;
+  display: inline-block;
+  font-weight: 100;
+}
+
+.footer-page__contact {
+  max-width: 367px;
+  /* margin-left: 8rem; */
+}
+
+.footer-page__right {
+  gap: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-page__contact p {
+  font-size: 25px;
+  line-height: 1.2;
+  color: #ffffff;
+  font-family: "Roboto Flex";
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.footer-page__contact a {
+  font-size: 19px;
+  line-height: 12px;
+  font-family: "Biennale";
+  font-weight: 500;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: #f2f2f2 solid 1px;
+  display: inline-flex;
+  align-items: center;
+  width: 80%;
+  height: 38px;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.footer-page__contact a img {
+  width: 20px;
+  margin-left: 1rem;
+  display: none;
+}
+
+.footer-page__contact a:hover img {
+  display: block;
+}
+
+.footer-page__social-network li a {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: backgroundColor ease 250ms;
+}
+
+.footer-page__social-network li a:hover {
+  background-color: #30ceb3;
+}
+
+.footer-page__social-network svg {
+  /* background-color: #fff; */
+  border-radius: 50%;
+  width: 18px;
+}
+
+.footer-page__social-item {
+}
+
+.footer__contact {
+  max-width: 367px;
+}
+
+.footer-page__bottom a {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "Roboto Flex";
+  font-weight: 100;
+  transition: color ease 250ms;
+}
+
+.footer-page__bottom a:hover {
+  color: #30ceb3;
+}
+
+.footer-page__services {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  /* align-items: center; */
+}
+
+.footer-page__services ul {
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem 1rem;
+}
+
+.footer-page__form {
+  width: 100%;
+  max-width: 340px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer-page-terms {
+  border-top: solid 1px #141414;
+  padding-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-page-terms span {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Roboto Flex";
+  font-weight: 100;
+}
+
+.footer-page-terms ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-page-terms li a {
+  font-size: 15px;
+}
+
+.bulletin > p {
+  color: #ffffff !important;
+}
+
+.bulletin input {
+  background: transparent !important;
+  border: none !important;
+  border-bottom: solid 3px #141414 !important;
+}
+
+.footer-page button.custom {
+  border: solid 1px #f2f2f2 !important;
+  height: 40px;
+}
+
+.footer-page a.custom.skyblue::before,
+button.custom.skyblue::before {
+  background-color: #ffffff29 !important;
+}
+
+a.custom:hover div,
+button.custom:hover div {
+  background-color: #ffffff29 !important;
+}
+
+.footer-page a.custom.skyblue:hover::before {
+  background-color: transparent !important;
+}
+
+.footer-page a.custom.skyblue:hover p,
+button.custom.skyblue p {
+  color: #ffffff !important;
+}
+
+.footer-page a.custom.skyblue div svg path,
+button.custom.skyblue div svg path {
+  fill: #ffffff !important;
+}
+
+.board {
+  margin-bottom: 2rem;
+}
+
+.team_iv .person_head img {
+  width: 200px !important;
+  display: block;
+  margin: auto;
+}
+
+@media (min-width: 600px) {
+  .team-invitro__content {
+    min-height: 70vh;
+  }
+
+  .team-invitro__wrapper {
+    /* height: 200px; */
+    height: initial;
+  }
+  .team-invitro img:nth-child(1) {
+    /* width: 350px; */
+    width: 60%;
+  }
+  .team-invitro img:nth-child(2) {
+    /* width: 250px; */
+    width: 40%;
+    transform: translate(-12%, 61%);
+  }
+
+  .quienes-somos-banner__item {
+    font-size: 30px;
+  }
+  .quienes-somos-banner__subtitle {
+    font-size: 30px;
+  }
+  .quienes-somos-banner__description {
+    font-size: 18px;
+  }
+  .creative-with {
+    display: block;
+  }
+  .footer-page__services ul {
+    grid-template-columns: 1fr 1fr;
+  }
+  .disruptivos h2 {
+    font-size: 26px !important;
+  }
+
+  .disruptivos h2 b {
+    font-size: 32px !important;
+  }
+
+  .disruptivos > img {
+    max-width: 200px !important;
+    left: -100px !important;
+  }
+}
+
+@media (min-width: 800px) {
+  .team-invitro__logo svg {
+    width: 160px;
+    height: 160px;
+  }
+  .footer-page-terms li a {
+    font-size: 16px;
+  }
+  .footer-page-terms {
+    flex-direction: row;
+  }
+
+  .footer-page__right {
+    gap: 4rem;
+  }
+  .footer-page__services {
+    align-items: center;
+  }
+  .creative-with {
+    font-size: 25px;
+    line-height: 30px;
+    left: 1rem;
+  }
+  .creative-with--second {
+    right: 01rem;
+    left: initial;
+  }
+  .footer-page__contact {
+    margin-left: 8rem;
+  }
+  .quienes-somos-banner__left {
+    padding-top: 7rem;
+    padding-left: 3rem;
+  }
+  .quienes-somos-banner__right {
+    display: block !important;
+    width: 500px !important;
+    height: 180px !important;
+  }
+  .quienes-somos-banner__list {
+    height: 50px !important;
+  }
+  .quienes-somos-banner__item {
+    font-size: 44px;
+  }
+  .quienes-somos-banner__right li {
+    font-size: 42px;
+    line-height: 60px;
+  }
+  .quienes-somos-banner__description {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .quienes-somos-banner__subtitle {
+    font-size: 44px;
+    text-stroke: 2px #ffffff;
+  }
+  .creative-with {
+    display: block;
+    font-size: 18px;
+  }
+  .footer-page__contact p {
+    font-size: 28px;
+  }
+  .footer-page__content {
+    grid-template-columns: auto 1fr;
+  }
+  .footer-page .logo {
+    margin-bottom: 8rem;
+  }
+  .footer-page__social-network {
+    flex-direction: column;
+  }
+  .footer-page__services ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 4rem;
+  }
+  .disruptivos h2 {
+    font-size: 2rem !important;
+  }
+
+  .disruptivos h2 b {
+    font-size: 2rem !important;
+  }
+}
+
+@media (min-width: 1020px) {
+  .disruptivos__cursor {
+    display: block;
+  }
+  .footer-page__contact p {
+    font-size: 32px;
+  }
+  .footer-page__services {
+    flex-direction: row;
+    align-items: initial;
+  }
+  .disruptivos h2 {
+    font-size: 3rem !important;
+  }
+
+  .disruptivos h2 b {
+    font-size: 3rem !important;
+  }
+
+  .footer-page__social-network svg {
+    width: 24px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .disruptivos h2 {
+    font-size: 4rem !important;
+  }
+
+  .disruptivos h2 b {
+    font-size: 4rem !important;
+  }
+  .footer-page__contact p {
+    font-size: 45px;
+  }
+  .footer-page__services ul {
+    gap: 2rem 3rem;
+  }
+  .footer-page__right {
+    gap: 8rem;
+  }
+  .footer-page__title {
+    font-size: 17px;
+  }
+  .footer-page__bottom a {
+    font-size: 16px;
+  }
+  .footer-page__services {
+    display: flex;
+    gap: 4rem;
+  }
+  .footer-page-terms {
+    gap: 2rem;
+  }
+  .footer-page-terms ul {
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team-invitro__logo svg {
+    width: 200px;
+    height: 200px;
+  }
+  .footer-page-terms li a {
+    font-size: 17px;
+  }
+  .quienes-somos-banner__description {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .footer-page__services ul {
+    gap: 2rem 3rem;
+  }
+  .footer-page__right {
+    gap: 6rem;
+  }
+  .team_iv .person_head img {
+    width: 100% !important;
+    display: initial;
+    margin: initial;
+  }
+  /* .footer-page-terms {
+    gap: initial;
+  } */
+  .team-invitro__content {
+    width: 95%;
+    /* max-width: 1447px; */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .team-invitro__wrapper {
+    display: flex;
+    height: 320px;
+  }
+
+  .team-invitro img:nth-child(1) {
+    align-self: flex-start;
+    width: 60%;
+  }
+  .team-invitro img:nth-child(2) {
+    align-self: flex-end;
+    width: 40%;
+  }
+  .footer-page__bottom a {
+    font-size: 15px;
+  }
+  .footer-page button.custom {
+    height: 52px;
+  }
+  .footer-page__contact p {
+    font-size: 40px;
+  }
+  .quienes-somos-banner__subtitle {
+    font-size: 65px;
+  }
+}
+
+@media (min-width: 1475px) {
+  .quienes-somos-banner__list {
+    height: 100px !important;
+  }
+  .quienes-somos-banner__right {
+    width: 720px !important;
+    height: 240px !important;
+  }
+  .quienes-somos-banner__item {
+    font-size: 65px;
+  }
+  .quienes-somos-banner__right li {
+    font-size: 96px;
+    height: 100%;
+    line-height: 120px;
+  }
+  .quienes-somos-banner__description {
+    font-size: 22px;
+    line-height: 36px;
+  }
+  .creative-with {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .team_iv .board > img {
+    display: none;
+  }
+  .team_iv .board {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 4rem;
+    align-items: center !important;
+    justify-items: center !important;
+  }
+  .team_iv .person {
+    left: initial !important;
+    top: initial !important;
+    right: initial !important;
+    bottom: initial !important;
+    transform: initial !important;
+    position: initial !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 1rem !important;
+  }
+
+  .team_iv .person_position {
+    position: initial !important;
+    transform: initial !important;
+  }
+  .team_iv .contenedor > p {
+    margin-bottom: 2rem;
+  }
+  .team_iv .person.bottom {
+    width: 100% !important;
+  }
+  .team_iv .person.top {
+    width: 100% !important;
+  }
+}

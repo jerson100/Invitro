@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="75.193" viewBox="0 0 60 75.193">
+  <g id="Componente_51_1" data-name="Componente 51 – 1" transform="translate(0 0.5)">
+    <g id="Elipse_40" data-name="Elipse 40" transform="translate(0 14.693)" fill="none" stroke="#33c" stroke-width="2" opacity="0.3">
+      <circle cx="30" cy="30" r="30" stroke="none"/>
+      <circle cx="30" cy="30" r="29" fill="none"/>
+    </g>
+    <path id="Icon_ionic-ios-arrow-round-forward" data-name="Icon ionic-ios-arrow-round-forward" d="M17.178,11.438a.662.662,0,0,0-.005.932l3.081,3.086H-25.871a.656.656,0,0,0-.654.659.656.656,0,0,0,.654.659H20.248l-3.081,3.086a.667.667,0,0,0,.005.932.656.656,0,0,0,.927-.005l4.175-4.205h0a.74.74,0,0,0,.137-.208.629.629,0,0,0,.051-.253.66.66,0,0,0-.187-.461L18.1,11.453A.645.645,0,0,0,17.178,11.438Z" transform="translate(46.116 26.525) rotate(90)" fill="#33c" stroke="#33c" stroke-width="1"/>
+  </g>
+</svg>

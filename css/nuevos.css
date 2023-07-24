@@ -1,0 +1,274 @@
+.team_iv {
+  padding-block: 5rem;
+}
+.team_iv h2 {
+  text-align: center;
+  color: var(--negro);
+  font-family: "BiennaleBold";
+  margin-bottom: 1.75rem;
+}
+.team_iv h2 strong {
+  font-family: "BiennaleLight";
+  display: block;
+  font-weight: 100;
+}
+.team_iv .contenedor {
+  position: relative;
+}
+.team_iv .contenedor > p {
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 300;
+  max-width: 500px;
+  text-align: center;
+  margin-inline: auto;
+}
+.team_iv .board {
+  height: auto;
+  position: relative;
+}
+.team_iv .board > img {
+  width: 100%;
+}
+.team_iv .board + div p {
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.team_iv .board + div ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.team_iv .board + div ul li a {
+  display: block;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #3333CC;
+  padding: 8px;
+}
+.team_iv .board + div ul li a svg, .team_iv .board + div ul li a g, .team_iv .board + div ul li a path {
+  fill: white;
+  color: white;
+}
+.team_iv .person {
+  width: 100%;
+  position: absolute;
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+.team_iv .person:hover {
+  transform: scale(1.09);
+}
+.team_iv .person > div {
+  width: 100%;
+}
+.team_iv .person.top {
+  max-width: 240px;
+}
+.team_iv .person.middle {
+  max-width: 202px;
+}
+.team_iv .person.bottom {
+  max-width: 185px;
+}
+.team_iv .person.bottom_xl {
+  max-width: 170px;
+}
+.team_iv .person.center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.team_iv .person.center:hover {
+  transform: translate(-50%, -50%) scale(1.09);
+}
+.team_iv .person_head img {
+  width: 100%;
+}
+.team_iv .person_position {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: -moz-max-content !important;
+  width: max-content !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1215686275);
+  padding: 5px 10px 5px 6px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid;
+  max-width: 156px;
+}
+.team_iv .person_icon {
+  width: 32px;
+  height: 32px;
+}
+.team_iv .person_icon img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  aspect-ratio: 1/1;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+.team_iv .person_name p {
+  font-size: 13px;
+  font-family: "BiennaleBlack";
+}
+.team_iv .person_name small {
+  display: block;
+  line-height: 1.2em;
+  font-size: 11px;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 100;
+}
+.team_iv .person.amarillo .person_position {
+  border-color: #FBE5C2;
+}
+.team_iv .person.naranja .person_position {
+  border-color: #FFCDBD;
+}
+.team_iv .person.verde .person_position {
+  border-color: #C1F0E8;
+}
+.team_iv .person.rosado .person_position {
+  border-color: #F9BEDB;
+}
+.team_iv .person.marlon .person_position {
+  bottom: 20px;
+  left: 0;
+  transform: none;
+  border-color: #C2C2F0;
+}
+.team_iv .person.maria {
+  top: 18%;
+  left: 32%;
+}
+.team_iv .person.rafaella {
+  bottom: 13%;
+  left: 15%;
+}
+.team_iv .person.jess {
+  top: 14%;
+  left: 16%;
+}
+.team_iv .person.michael {
+  top: 0;
+  right: 2%;
+}
+.team_iv .person.michael b {
+  display: block;
+  width: -moz-max-content;
+  width: max-content;
+}
+.team_iv .person.joselyn {
+  bottom: 32%;
+  right: 2%;
+}
+.team_iv .person.joselyn b {
+  display: block;
+  width: -moz-max-content;
+  width: max-content;
+}
+.team_iv .person.hairo {
+  bottom: 34%;
+  left: 3.5%;
+}
+.team_iv .person.paul {
+  top: 1%;
+  left: 4%;
+}
+.team_iv .person.david {
+  bottom: 12%;
+  left: 31%;
+}
+.team_iv .person.selene {
+  bottom: 17%;
+  right: 31%;
+}
+.team_iv .person.selene b {
+  display: block;
+  width: -moz-max-content;
+  width: max-content;
+}
+.team_iv .person.kath {
+  top: 18%;
+  right: 32%;
+}
+.team_iv .person.kath b {
+  display: block;
+  width: -moz-max-content;
+  width: max-content;
+}
+.team_iv .person.edward {
+  bottom: 13.5%;
+  right: 16%;
+}
+.team_iv .person.rosa {
+  top: 18%;
+  right: 17%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.disruptivos {
+  position: relative;
+  overflow: hidden;
+}
+.disruptivos h2 {
+  font-size: 4rem;
+  color: #262626;
+  text-align: center;
+  font-family: "BiennaleLight";
+  line-height: 1.2em;
+  font-weight: 100;
+}
+.disruptivos h2 b {
+  display: block;
+  font-size: 4rem;
+  font-family: "BiennaleBold";
+  color: #3333CC;
+}
+.disruptivos > img {
+  position: absolute;
+  width: 100%;
+  max-width: 300px;
+  left: -150px;
+  bottom: 100px;
+  animation-name: rotate;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.galeria_fotos {
+  padding: 5rem 0 6rem;
+}
+.galeria_fotos p {
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.galeria_fotos p b {
+  display: block;
+}
+.galeria_fotos img {
+  width: 100%;
+}
+.galeria_fotos .splide__slide {
+  display: flex;
+  align-items: center;
+}/*# sourceMappingURL=nuevos.css.map */

@@ -1,0 +1,284 @@
+.team_iv{
+    padding-block: 5rem;
+    h2{
+        text-align: center;
+        color: var(--negro);
+        font-family: 'BiennaleBold';
+        margin-bottom: 1.75rem;
+        strong{
+            font-family: 'BiennaleLight';
+            display: block;
+            font-weight: 100;
+        }
+    }
+    .contenedor{
+        position: relative;
+        &>p{
+            font-family: 'Roboto Flex', sans-serif;
+            font-weight: 300;
+            max-width: 500px;
+            text-align: center;
+            margin-inline: auto;
+        }
+    }
+
+    .board{
+        // height: 90vh;
+        height: auto;
+        position: relative;
+        &>img{
+            width: 100%;
+        }
+        &+div{
+            p{
+                font-family: 'Roboto Flex', sans-serif;
+                font-weight: 300;
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+            ul{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 30px;
+                li{
+                    a{
+                        display: block;
+                        width: 46px;
+                        height: 46px;
+                        border-radius: 50%;
+                        background: #3333CC;
+                        padding: 8px;
+                        svg, g, path{
+                            fill: white;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .person{
+        width: 100%;
+        position: absolute;
+        transform: scale(1);
+        transition: all .3s ease;
+        &:hover{
+            transform: scale(1.09);
+        }
+        &>div{
+            width: 100%;
+        }
+        &.top{
+            max-width: 240px;
+        }
+        &.middle{
+            max-width: 202px;
+        }
+        &.bottom{
+            max-width: 185px;
+        }
+        &.bottom_xl{
+            max-width: 170px;
+        }
+        &.center{
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            &:hover{
+                transform: translate(-50%, -50%) scale(1.09);
+            }
+        }
+
+        &_head{
+            img{
+                width: 100%;
+            }
+        }
+        &_position{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            width: max-content !important;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            box-shadow: 0px 3px 6px #0000001F;
+            padding: 5px 10px 5px 6px;
+            background: white;
+            border-radius: 8px;
+            border: 1px solid;
+            max-width: 156px;
+        }
+        &_icon{
+            width: 32px;
+            height: 32px;
+            img{
+                width: 100%;
+                height: 100%;
+                display: block;
+                aspect-ratio: 1/1;
+                object-fit: contain;
+                object-position: center;
+            }
+        }
+        &_name{
+            p{
+                font-size: 13px;
+                font-family: 'BiennaleBlack';
+            }
+            small{
+                display: block;
+                line-height: 1.2em;
+                font-size: 11px;
+                font-family: 'Roboto Flex', sans-serif;
+                font-weight: 100;
+            }
+        }
+
+        &.amarillo{
+            .person_position{border-color: #FBE5C2;}
+        }
+        &.naranja{
+            .person_position{border-color: #FFCDBD;}
+        }
+        &.verde{
+            .person_position{border-color: #C1F0E8;}
+        }
+        &.rosado{
+            .person_position{border-color: #F9BEDB;}
+        }
+
+        &.marlon{
+            .person_position{
+                bottom: 20px;
+                left: 0;
+                transform: none;
+                border-color: #C2C2F0;
+            }
+        }
+        &.maria{
+            top: 18%;
+            left: 32%;
+        }
+        &.rafaella{
+            bottom: 13%;
+            left: 15%;
+        }
+        &.jess{
+            top: 14%;
+            left: 16%;
+        }
+        &.michael{
+            top: 0;
+            right: 2%;
+            b{
+                display: block;
+                width: max-content;
+            }
+        }
+        &.joselyn{
+            bottom: 32%;
+            right: 2%;
+            b{
+                display: block;
+                width: max-content;
+            }
+        }
+        &.hairo{
+            bottom: 34%;
+            left: 3.5%;
+        }
+        &.paul{
+            top: 1%;
+            left: 4%;
+        }
+        &.david{
+            bottom: 12%;
+            left: 31%;
+        }
+        &.selene{
+            bottom: 17%;
+            right: 31%;
+            b{
+                display: block;
+                width: max-content;
+            }
+        }
+        &.kath{
+            top: 18%;
+            right: 32%;
+            b{
+                display: block;
+                width: max-content;
+            }
+        }
+        &.edward{
+            bottom: 13.5%;
+            right: 16%;
+        }
+        &.rosa{
+            top: 18%;
+            right: 17%;
+        }
+
+    }
+}
+.w-100{width: 100%;}
+.disruptivos{
+    position: relative;
+    overflow: hidden;
+    h2{
+        font-size: 4rem;
+        color: #262626;
+        text-align: center;
+        font-family: 'BiennaleLight';
+        line-height: 1.2em;
+        font-weight: 100;
+        b{
+            display: block;
+            font-size: 4rem;
+            font-family: 'BiennaleBold';
+            color: #3333CC;
+        }
+    }
+    &>img{
+        position: absolute;
+        width: 100%;
+        max-width: 300px;
+        left: -150px;
+        bottom: 100px;
+        -webkit-animation-name: rotate;
+        animation-name: rotate;
+        -webkit-animation-duration: 15s;
+        animation-duration: 15s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+}
+
+.galeria_fotos{
+    padding: 5rem 0 6rem;
+    p{
+        font-family: 'Roboto Flex', sans-serif;
+        font-weight: 300;
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 5rem;
+        b{
+            display: block;
+        }
+    }
+    img{
+        width: 100%;
+    }
+    .splide__slide{
+        display: flex;
+        align-items: center;
+    }
+}
