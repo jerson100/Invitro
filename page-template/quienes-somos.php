@@ -137,7 +137,18 @@ get_header();
                 </div>
             </div>
         </div>
+        <div class="row why_invitro__two">
+            <div class="col-half">
+                <img src="<?php echo IMG?>/quienes_somos/img-214.png" alt="Invitro Agencia"/>
+            </div>
+            <div class="col-half">
+                <img src="<?php echo IMG?>/quienes_somos/10years.png" alt="10 años creativos siempre en digital"/>
+            </div>
+        </div>
     </div>
+</section>
+<section class="team">
+    <div class="awards center-vertical" data-bgColor="claro"><div class="contenedor"><div class="row"><div class="col-custom-left" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;"><h2><strong>Reconocidos como</strong> un gran equipo</h2><p>Todos aportamos nuestro granito de arena porque sabemos que un equipo comprometido logra grandes resultados.</p></div><div class="col-custom-right" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;"> <img src="https://invitro.pe/wp-content/uploads/2023/01/img-217.png" alt="Premios obtenidos por InVitro Agencia Digital" title="Premios obtenidos por InVitro Agencia Digital" loading="lazy" data-lazy-src="https://invitro.pe/wp-content/uploads/2023/01/img-217.png" class="lazyloaded" data-was-processed="true"><noscript><img src="https://invitro.pe/wp-content/uploads/2023/01/img-217.png" alt="Premios obtenidos por InVitro Agencia Digital" title="Premios obtenidos por InVitro Agencia Digital" loading="lazy"></noscript></div></div></div></div>
 </section>
 <section class="team-invitro" data-bgColor="oscuro">
     <div class="team-invitro__content">
@@ -721,6 +732,21 @@ get_footer();
             mouseContainerDisruptivos.classList.add("hidden");
         });
 
+
+        const timeline = gsap.timeline({ defaults: { duration: 0.1 } });
+
+        // Agregar las animaciones a la línea de tiempo
+        timeline.from(".team-invitro__wrapper img:nth-child(1)", { y: "-200", opacity: 0 }, "start")
+                .from(".team-invitro__wrapper img:nth-child(2)", { y: "200", opacity: 0 }, "start");
+                
+        // Establecer el disparador del scroll para la línea de tiempo
+        ScrollTrigger.create({
+            trigger: ".team-invitro",
+            animation: timeline,
+            start: "top 100%",//cuando el 80% del team-invitro este visible
+            // end: "bottom 20%",
+            scrub: .3
+        });
 
 
     },);

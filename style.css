@@ -18,6 +18,31 @@ Version: 1.0
   background-color: #fff !important;
 }
 
+.why_invitro__two {
+  padding-top: 4rem;
+  max-width: 97% !important;
+  margin: auto !important;
+}
+
+.why_invitro__section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.why_invitro__two img {
+  max-width: 250px;
+}
+
+.why_invitro__two .col-half {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.why_invitro__two .col-half:nth-child(2) {
+  margin-top: 4rem;
+}
+
 .quienes-somos-banner {
   display: flex;
   align-items: center;
@@ -496,6 +521,66 @@ button.custom.skyblue div svg path {
 
 .board {
   margin-bottom: 2rem;
+  --w-item-board: 0;
+  --w-item-board-center: 0;
+}
+
+.team_iv .person.center {
+  max-width: calc(240px - var(--w-item-board-center)) !important;
+}
+
+.team_iv .person.middle {
+  max-width: calc(202px - var(--w-item-board)) !important;
+}
+
+.team_iv .person.bottom_xl {
+  max-width: calc(170px - var(--w-item-board)) !important;
+}
+
+.team_iv .person.bottom {
+  max-width: calc(180px - var(--w-item-board)) !important;
+}
+
+@media (min-width: 1200px) {
+  .board {
+    --w-item-board-center: 80px;
+    --w-item-board: 60px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .board {
+    --w-item-board-center: 70px;
+    --w-item-board: 50px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .board {
+    --w-item-board-center: 65px;
+    --w-item-board: 45px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .board {
+    --w-item-board-center: 60px;
+    --w-item-board: 40px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .board {
+    --w-item-board-center: 55px;
+    --w-item-board: 35px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .board {
+    --w-item-board-center: 0px;
+    --w-item-board: 0px;
+  }
 }
 
 .team_iv .person_head img {
@@ -519,15 +604,12 @@ button.custom.skyblue div svg path {
   }
 
   .team-invitro__wrapper {
-    /* height: 200px; */
     height: initial;
   }
   .team-invitro img:nth-child(1) {
-    /* width: 350px; */
     width: 60%;
   }
   .team-invitro img:nth-child(2) {
-    /* width: 250px; */
     width: 40%;
     transform: translate(-12%, 61%);
   }
@@ -538,9 +620,7 @@ button.custom.skyblue div svg path {
   .quienes-somos-banner__subtitle {
     font-size: 30px;
   }
-  .quienes-somos-banner__description {
-    font-size: 18px;
-  }
+
   .creative-with {
     display: block;
     line-height: 38px;
@@ -571,7 +651,7 @@ button.custom.skyblue div svg path {
     height: 160px;
   }
   .footer-page-terms li a {
-    font-size: 16px;
+    font-size: 15px;
   }
   .footer-page-terms {
     flex-direction: row;
@@ -615,7 +695,7 @@ button.custom.skyblue div svg path {
     line-height: 60px;
   }
   .quienes-somos-banner__description {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 30px;
   }
   .quienes-somos-banner__subtitle {
@@ -627,7 +707,7 @@ button.custom.skyblue div svg path {
     font-size: 18px;
   }
   .footer-page__contact p {
-    font-size: 28px;
+    font-size: 22px;
   }
   .footer-page__content {
     grid-template-columns: auto 1fr;
@@ -652,6 +732,10 @@ button.custom.skyblue div svg path {
 }
 
 @media (min-width: 1020px) {
+  .why_invitro__two {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
   .disruptivos__cursor {
     display: block;
   }
@@ -675,7 +759,24 @@ button.custom.skyblue div svg path {
   }
 }
 
+@media (min-width: 993px) {
+  .why_invitro__two {
+    margin-top: 0;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
 @media (min-width: 1500px) {
+  .why_invitro__two {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+
+  .why_invitro__section {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
   .disruptivos h2 {
     font-size: 4rem !important;
   }
@@ -711,6 +812,13 @@ button.custom.skyblue div svg path {
 }
 
 @media (min-width: 1200px) {
+  .why_invitro__two img {
+    max-width: 100%;
+  }
+  .why_invitro__section {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
   .team-invitro__logo svg {
     width: 200px;
     height: 200px;
@@ -733,12 +841,8 @@ button.custom.skyblue div svg path {
     display: initial;
     margin: initial;
   }
-  /* .footer-page-terms {
-    gap: initial;
-  } */
   .team-invitro__content {
     width: 95%;
-    /* max-width: 1447px; */
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -788,8 +892,8 @@ button.custom.skyblue div svg path {
     line-height: 120px;
   }
   .quienes-somos-banner__description {
-    font-size: 22px;
-    line-height: 36px;
+    font-size: 30px;
+    line-height: 46px;
   }
   .creative-with {
     font-size: 25px;
