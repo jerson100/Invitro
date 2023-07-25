@@ -616,11 +616,12 @@ get_footer();
 
         document.querySelector("header").style.backgroundColor = "#000000"
 
-        const fixedText = document.querySelector(".creative-with");
+        // const fixedText = document.querySelector(".creative-with");
+        const fixedTextRight = document.querySelector(".creative-with--");
         const childElements = nextSibling(".creative-with", "data-bgcolor")
 
-        const element1 = fixedText
-        const elementsToObserve = childElements
+        const [element1, element2] = [...document.querySelectorAll(".creative-with")];
+        const elementsToObserve = childElements;
 
         function checkOverlap(rect1, rect2) {
             return !(rect1.right < rect2.left ||
@@ -634,15 +635,24 @@ get_footer();
             // console.log(window.matchMedia("(min-width: 600px)").matches)
 
             const rect1 = element1.getBoundingClientRect();
+            const rect1Right = element2.getBoundingClientRect();
 
             elementsToObserve.forEach(element => {
                 const rect2 = element.getBoundingClientRect();
                 const isOverlapping = checkOverlap(rect1, rect2);
+                const isOverlappingRight = checkOverlap(rect1Right, rect2);
 
                 if (isOverlapping) {
                     const color = element.getAttribute("data-bgcolor");
                     if (color) {
-                        fixedText.style.color = color === "oscuro" ? "white" : "black"
+                        element1.style.color = color === "oscuro" ? "white" : "black"
+                    }
+                }
+                
+                if(isOverlappingRight){
+                    const color = element.getAttribute("data-bgcolor");
+                    if (color) {
+                        element2.style.color = color === "oscuro" ? "white" : "black"
                     }
                 }
             });
